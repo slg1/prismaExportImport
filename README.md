@@ -1,16 +1,16 @@
-## multiple Path Resol
+## Prisma export/import
 
-*(prisma 15.3 and test with prisma 20.1)*
+*(prisma 15.3, 1.27.3, 1.28.5)*
 
-Received an error when try to query parents data for two types but with one missing in the first type.
+Received unexpected export failures.
 
-Error message received from query: "Whoops. Looks like an internal server error. Search your server logs for request ID: local:api:{ID}"
+Failure inserting into relationtable _CodeToObj with ids StringIdGCValue(cjtflw2ilq6qp08799l21x89r) and StringIdGCValue(cjtfly6jxroq50879hp2avno8). Cause: duplicate key value violates unique constraint \"_CodeToObj_AB_unique\"\n  Detail: Key (\"A\", \"B\")=(cjtflw2biq6ni08798alm3tyl, cjtflwoqeqlnj0879ijz8xb29) already exists.
 
 **Repoducibility/Probability :**
   very often fail
 
 ## To reproduce:
-**Unzip the repository:**
+**Clone the repository:**
 1. git clone https://github.com/slg1/exportImport.git
 2. cd exportImport/
 3. npm install
