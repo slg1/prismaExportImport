@@ -15,20 +15,20 @@ Failure inserting into relationtable _CodeToObj with ids StringIdGCValue(cjtflw2
 2. cd prismaExportImport/
 3. npm install
 
-**get prisma token and copy in the index.js**
+**get prisma token and copy in the index.js:**
 npm install npm-run
 ./node_modules/.bin/npm-run prisma token
 copy token in index.js file
 
-**run index.js to load database**
+**run index.js to load database:**
 node_modules/.bin/prisma reset -f ;node_modules/.bin/prisma delete -f;node_modules/.bin/prisma deploy;node index.js
 
-**export**
+**export:**
 rm -f /tmp/prismaLocal.zip;node_modules/.bin/prisma export --path /tmp/prismaLocal.zip 
 
-**import**
+**import:**
 rm -rf .import/;node_modules/.bin/prisma reset -f ;node_modules/.bin/prisma delete -f;node_modules/.bin/prisma deploy;node_modules/.bin/prisma import --data /tmp/prismaLocal.zip
 
-**result of test**
+**result of test:**
 Observe several traces in console (if no traces are print, redo the test from "run index.js to load database")
   "Failure inserting into relationtable _CodeToObj with ids StringIdGCValue(cjtfka7a2oglf0879ofll120t) and StringIdGCValue(cjtfkcdgypylu0879k2k9a994). Cause: duplicate key value violates unique constraint \"_CodeToObj_AB_unique\"\n  Detail: Key (\"A\", \"B\")=(cjtfka74nogi80879crln0530, cjtfkas5povi90879pqlt43c7) already exists."
