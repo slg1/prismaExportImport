@@ -1,0 +1,10 @@
+type Code {
+    id: ID! @unique
+    code: String!
+}
+
+type Obj {
+  id: ID! @unique
+  codeLink: Code!
+}
+
