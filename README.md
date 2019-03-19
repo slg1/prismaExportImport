@@ -16,17 +16,17 @@ Failure inserting into relationtable _CodeToObj with ids StringIdGCValue(cjtflw2
 3. npm install
 
 **get prisma token and copy in the index.js:**
-./node_modules/.bin/prisma token
-copy token in index.js file
+1. /node_modules/.bin/prisma token
+2. copy token in index.js file
 
 **run index.js to load database:**
-node_modules/.bin/prisma reset -f ;node_modules/.bin/prisma delete -f;node_modules/.bin/prisma deploy;node index.js
+1. node_modules/.bin/prisma reset -f ;node_modules/.bin/prisma delete -f;node_modules/.bin/prisma deploy;node index.js
 
 **export:**
-rm -f /tmp/prismaLocal.zip;node_modules/.bin/prisma export --path /tmp/prismaLocal.zip 
+1. rm -f /tmp/prismaLocal.zip;node_modules/.bin/prisma export --path /tmp/prismaLocal.zip 
 
 **import:**
-rm -rf .import/;node_modules/.bin/prisma reset -f ;node_modules/.bin/prisma delete -f;node_modules/.bin/prisma deploy;node_modules/.bin/prisma import --data /tmp/prismaLocal.zip
+1. rm -rf .import/;node_modules/.bin/prisma reset -f ;node_modules/.bin/prisma delete -f;node_modules/.bin/prisma deploy;node_modules/.bin/prisma import --data /tmp/prismaLocal.zip
 
 **result of test:**
 Observe several traces in console (if no traces are print, redo the test from "run index.js to load database")
