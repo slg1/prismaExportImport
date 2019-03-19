@@ -11,8 +11,8 @@ Failure inserting into relationtable _CodeToObj with ids StringIdGCValue(cjtflw2
 
 ## To reproduce:
 **Clone the repository:**
-1. git clone https://github.com/slg1/exportImport.git
-2. cd exportImport/
+1. git clone https://github.com/slg1/prismaExportImport.git
+2. cd prismaExportImport/
 3. npm install
 
 **get prisma token and copy in the index.js**
