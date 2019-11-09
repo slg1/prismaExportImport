@@ -16,7 +16,7 @@ Failure inserting into relationtable _CodeToObj with ids StringIdGCValue(cjtflw2
 3. npm install
 
 **get prisma token and copy in the index.js:**
-1. /node_modules/.bin/prisma token
+1. ./node_modules/.bin/prisma token
 2. copy token in index.js file
 
 **run index.js to load database:**
